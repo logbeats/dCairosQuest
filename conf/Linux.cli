@@ -1,0 +1,55 @@
+pts, cat ExtractResult.txt | grep -i pts |  grep -v # | wc -l
+PermitRootLogin, grep -i PermitRootLogin ExtractResult.txt | grep -v ^# | sed s/PermitRootLogin//
+lcredit, grep -i lcredit ExtractResult.txt | grep -v ^# | sed s/lcredit// | sed s/=//
+ucredit, grep -i ucredit ExtractResult.txt | grep -v ^# | sed s/ucredit// | sed s/=//
+dcredit, grep -i dcredit ExtractResult.txt | grep -v ^# | sed s/dcredit// | sed s/=//
+ocredit, grep -i ocredit ExtractResult.txt | grep -v ^# | sed s/ocredit// | sed s/=//
+Deny, grep -i deny= ExtractResult.txt | grep -v ^# | sed -n -e s/.*\(deny=[0-9]\+\).*/\1/p | sed s/deny=//
+PASS_MIN_LEN, grep -i PASS_MIN_LEN ExtractResult.txt | grep -v ^# | sed s/PASS_MIN_LEN// | sed s/=//
+PASS_WARN_AGE, grep -i PASS_WARN_AGE ExtractResult.txt | grep -v ^# | sed s/PASS_WARN_AGE// | sed s/=//
+PASS_MAX_DAYS, grep -i PASS_MAX_DAYS ExtractResult.txt | grep -v ^# | sed s/PASS_MAX_DAYS// | sed s/=//
+PASS_MIN_DAYS, grep -i PASS_MIN_DAYS ExtractResult.txt | grep -v ^# | sed s/PASS_MIN_DAYS// | sed s/=//
+rootPathDir, cat ExtractResult.txt | grep "\.:" | wc -l
+sendmail.cf, grep -i DZ ExtractResult.txt
+restrictqrun, grep -i restrictqrun ExtractResult.txt | egrep -v "grep" | wc -l
+exports, grep -i /etc/exports ExtractResult.txt | grep -v "#" | grep "/" | wc -l
+pam_securetty, cat ExtractResult.txt | grep -i pam_securetty.so | grep -v # | wc -l
+anonymous_enable, grep -i anonymous_enable ExtractResult.txt | grep -v ^# | sed s/anonymous_enable// | sed s/=//
+exports, grep -i /etc/exports ExtractResult.txt | grep -v "#" | grep "/" | wc -l
+finger, grep -i finger ProcessState.csv | egrep -v "grep" | wc -l
+ftp, grep -i ftp ProcessState.csv | egrep -v "grep" | wc -l
+rsh, grep -i rsh ProcessState.csv | egrep -v "grep" | wc -l
+rlogin, grep -i rlogin ProcessState.csv | egrep -v "grep" | wc -l
+rexec, grep -i rexec ProcessState.csv | egrep -v "grep" | wc -l
+echo, grep -i echo ProcessState.csv | egrep -v "grep" | wc -l
+discard, grep -i discard ProcessState.csv | egrep -v "grep" | wc -l
+daytime, grep -i daytime ProcessState.csv | egrep -v "grep" | wc -l
+chargen, grep -i chargen ProcessState.csv | egrep -v "grep" | wc -l
+nfs, grep -i "mountd|nfs" ProcessState.csv | egrep -v "grep" | wc -l
+nfsd, grep -i nfsd ProcessState.csv | egrep -v "grep|statdaemon|automountd" | grep -v "grep" | wc -l
+automountd, grep -i automountd ProcessState.csv | grep -v "grep|rpc|statdaemon|emi" | wc -l
+rpc.cmsd, grep -i rpc.cmsd ProcessState.csv | egrep -v "grep" | wc -l
+rpc.ttdbserverd, grep -i rpc.ttdbserverd ProcessState.csv | egrep -v "grep" | wc -l
+sadmind, grep -i sadmind ProcessState.csv | egrep -v "grep" | wc -l
+rusersd, grep -i rusersd ProcessState.csv | egrep -v "grep" | wc -l
+walld, grep -i walld ProcessState.csv | egrep -v "grep" | wc -l
+sprayd, grep -i sprayd ProcessState.csv | egrep -v "grep" | wc -l
+rstatd, grep -i rstatd ProcessState.csv | egrep -v "grep" | wc -l
+rpc.nisd, grep -i rpc.nisd ProcessState.csv | egrep -v "grep" | wc -l
+rpc.pcnfsd, grep -i rpc.pcnfsd ProcessState.csv | egrep -v "grep" | wc -l
+rpc.statd, grep -i rpc.statd ProcessState.csv | egrep -v "grep" | wc -l
+rpc.ypupdated, grep -i rpc.ypupdated ProcessState.csv | egrep -v "grep" | wc -l
+rpc.rquotad, grep -i rpc.rquotad ProcessState.csv | egrep -v "grep" | wc -l
+kcms_server, grep -i kcms_server ProcessState.csv | egrep -v "grep" | wc -l
+cachefsd, grep -i cachefsd ProcessState.csv | egrep -v "grep" | wc -l
+rexd, grep -i rexd ProcessState.csv | egrep -v "grep" | wc -l
+ypserv, grep -i ypserv ProcessState.csv | egrep -v "grep" | wc -l
+ypbind, grep -i ypbind ProcessState.csv | egrep -v "grep" | wc -l
+ypxfrd, grep -i ypxfrd ProcessState.csv | egrep -v "grep" | wc -l
+rpc.yppasswdd, grep -i rpc.yppasswdd ProcessState.csv | egrep -v "grep" | wc -l
+rpc.ypupdated, grep -i rpc.ypupdated ProcessState.csv | egrep -v "grep" | wc -l
+tftp, grep -i tftp ProcessState.csv | egrep -v "grep" | wc -l
+talk, grep -i talk ProcessState.csv | egrep -v "grep" | wc -l
+ntalk, grep -i ntalk ProcessState.csv | egrep -v "grep" | wc -l
+sendmail, grep -i sendmail ProcessState.csv | egrep -v "grep" | wc -l
+named, grep -i named ProcessState.csv | egrep -v "grep" | wc -l
