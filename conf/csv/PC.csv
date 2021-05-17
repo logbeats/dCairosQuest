@@ -18,6 +18,7 @@ error reporting service,!=,Running,응용프로그램의 오류를 MS에 보고�
 clipbook,!=,Running,서버 내 Clipbook을 다른 클라이언트와 공유,PC-04
 automatic updates,!=,Running,MS패치 관리 서버로 패치를 일괄적으로 관리하는 경우 불필요한 서비스,PC-04
 alerter,!=,Running,관리용 경고메시지를 전송하는 기능,PC-04
+PreventRun,==,1,Windows Messenger 실행 허용 안 함,PC-05
 SecurityUpdate,>=,08.10.2019,최신 HOT-FIX 적용,PC-06
 EnableFirewall,==,1,OS에서 제공하는 침입차단 기능 활성화,PC-10
 ScreenSaveActive,==,1,ScreenSaveActive,PC-11
