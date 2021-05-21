@@ -9,11 +9,16 @@
 클라우드 서비스 환경에 따라 예제 변경 및 관리가 가능하여 dCairos 프로젝트의 일부이며 단독으로 사용할 수 있습니다.
 (It is a part of dCairos project as it is possible to change and manage examples according to the cloud service environment, and can be used alone)
 
-## 특징
 
-### 주요 기능
-
-
+## 설치(Installation)
+```cmd
+pip install -r requirements.txt
+             or
+pip3 install -r requirements.txt
+```
+### 요구 사항(Requirements)
+  * Python 3.7+
+  * Windows or Linux or MacOS
 
 ## 설치
 ```
