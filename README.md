@@ -11,7 +11,7 @@
 
 
 ## 설치(Installation)
-```cmd
+```
 pip install -r requirements.txt
              or
 pip3 install -r requirements.txt
@@ -20,8 +20,10 @@ pip3 install -r requirements.txt
   * Python 3.7+
   * Windows or Linux or MacOS
 
-## 설치
-```
-pip install -r requirements.txt
-```
-### 요구 사항
+## 사용법(Usage)
+
+### 명령 줄 인터페이스(Command-Line Interface)
+`test`을 설치하면, 두 가지 간단한 명령 줄(CLI) 프로그램을 얻습니다:
+
+* `test` - 데이터가 들어있는 폴더에서, ~ 인식합니다.
+* `test` - 데이터가 들어있는 폴더에서, ~ 찾습니다.
