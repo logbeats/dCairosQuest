@@ -59,7 +59,6 @@ class ComparingOperator:
             else:
                 self.iData = 0
         else:
-            print(a, b)
             if a >= b:
                 self.iData = 1
             else:

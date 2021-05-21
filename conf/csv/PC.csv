@@ -1,8 +1,8 @@
 Name,Compare,Data,Explanatory,ItemCode
 MinimumPasswordAge,==,1,최소 암호 기간,PC-01
-MaximumPasswordAge,>=,90,최대 암호 기간,PC-01
+MaximumPasswordAge,<=,90,최대 암호 기간,PC-01
 PasswordHistorySize,>=,24,최근 암호 기억,PC-01
-LockoutBadCount,>=,5,계정 잠금 임계값,PC-02
+LockoutBadCount,<=,5,계정 잠금 임계값,PC-02
 MinimumPasswordLength,>=,8,최소 암호 길이,PC-02
 PasswordComplexity,==,1,암호는 복잡성을 만족해야 함,PC-02
 ClearTextPassword,==,0,해독 가능한 암호화를 사용하여 암호 저장,PC-02

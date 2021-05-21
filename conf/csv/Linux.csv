@@ -5,16 +5,16 @@ ucredit,==,-1,최소 대문자 요구,U-02
 dcredit,==,-1,최소 숫자 요구,U-02
 ocredit,==,-1,최소 특수문자 요구,U-02
 minlen,>=8,최소 8자리 이상,U-02
-Dery,>=,5,계정 잠금 임계값 설정,U-03
-PASS_MAX_DAYS,>=,90,패스워드의 최대 사용기간,U-04
+Dery,<=,5,계정 잠금 임계값 설정,U-03
+PASS_MAX_DAYS,<=,90,패스워드의 최대 사용기간,U-04
 rootPathDir,==,0,디렉터리 권한 및 패스 설정,U-06
 NouserGroup,==,0,파일 및 디렉터리 소유자 설정,U-07
-/etc/passwd,>=,644,passwd 파일 소유자 및 권한 설정,U-08
-/etc/shadow,>=,640,shadow 파일 소유자 및 권한 설정,U-09
-/etc/hosts,>=,644,hosts 파일 소유자 및 권한 설정,U-10
-/etc/xinetd.conf,>=,644,xinetd.conf 파일 소유자 및 권한 설정,U-11
-/etc/rsyslog.conf,>=,644,syslog.conf 파일 소유자 및 권한 설정,U-12
-/etc/services,>=,644,services 파일 소유자 및 권한 설정,U-13
+/etc/passwd,<=,644,passwd 파일 소유자 및 권한 설정,U-08
+/etc/shadow,<=,640,shadow 파일 소유자 및 권한 설정,U-09
+/etc/hosts,<=,644,hosts 파일 소유자 및 권한 설정,U-10
+/etc/xinetd.conf,<=,644,xinetd.conf 파일 소유자 및 권한 설정,U-11
+/etc/rsyslog.conf,<=,644,syslog.conf 파일 소유자 및 권한 설정,U-12
+/etc/services,<=,644,services 파일 소유자 및 권한 설정,U-13
 /etc/hosts.equiv,>=,0,hosts.equiv 사용 금지,U-17
 cron,!=,0,cron 파일 소유자 및 권한 설정,U-19
 finger,!=,1,finger services 확인,U-20

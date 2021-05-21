@@ -375,7 +375,6 @@ class DataToProcess:
                 DataLine[1] = DataLine[1].replace('ExtractResult.txt',
                                                   ExtractResult)
                 sysMsg = subprocess.getstatusoutput(DataLine[1])
-                print(sysMsg)
                 if sysMsg[1]:  # 데이터 있음
                     Resul = Data, sysMsg[1].strip()
                     DataResult.append(Resul)

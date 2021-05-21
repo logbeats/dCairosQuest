@@ -1,8 +1,8 @@
 Name,Compare,Data,Explanatory,ItemCode
 NewAdministratorName,!=,Administrator,계정: Administator 계정 이름 바꾸기,W-01
 EnableGuestAccount,==,0,계정: Guest 계정 상태,W-02
-UserAccount,>=,1,사용자 활성화 카운트,W-03
-LockoutBadCount,>=,5,계정 잠금 임계값,W-04
+UserAccount,<=,1,사용자 활성화 카운트,W-03
+LockoutBadCount,<=,5,계정 잠금 임계값,W-04
 MaximumPasswordAge,>=,90,최대 암호 기간,W-05
 MinimumPasswordAge,!=,0,암호 사용기간 제한없음 제거,W-06
 ClearTextPassword,==,0,해독 가능한 암호화를 사용하여 암호 저장,W-07
