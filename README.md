@@ -20,12 +20,17 @@ pip3 install -r requirements.txt
   * Python 3.7+
   * Windows or Linux or MacOS:테스트 중(under testing)
 
+### 실행 및 명령 줄 인터페이스(Run and Command-Line Interface)
+`script` 디렉터리에는 OS 별 데이터 추출 스크립트가 포함되어 있습니다. 데이터는 명령 줄(CLI) 또는 실행을 통해서 얻습니다.(The directory contains OS-specific data extraction scripts. Data is obtained from the command line (CLI) or through execution)
+
+* `Windows` - '.bat' 실행을 통해서 얻습니다.(It is obtained through execution)
+* `Linux` - '.sh' 명령 줄(CLI)을 통해서 얻습니다.(Obtained through the command line (CLI))
+* `MacOS` - '.sh' 현재 지원되지 않습니다.(Currently not supported)
+* `확실한 결과를 얻으려면 관리자 권한으로 실행해야합니다.(You need to run it with administrator privileges to get definite results)`
+
 ## 사용법(Usage)
-
-### 명령 줄 인터페이스(Command-Line Interface)
-`script` 디렉터리에는 OS 별 데이터 추출 스크립트가 포함되어 있습니다. 데이터는 명령 줄(CLI) 또는 실행을 통해서 얻습니다.(The directory contains OS-specific data extraction scripts. Data is obtained from the command line (CLI) or through execution.)
-
-* `Windows` - '.bat' 실행을 통해서 얻습니다.(It is obtained through execution.)
-* `Linux` - '.sh' 명령 줄(CLI)을 통해서 얻습니다.(Obtained through the command line (CLI).)
-* `MacOS` - '.sh' 현재 지원되지 않습니다.(Currently not supported.)
-* `확실한 결과를 얻으려면 관리자 권한으로 실행해야합니다.(You need to run it with administrator privileges to get definite results.)`
+추출 된 데이터를 `workspace\input` 디렉토리에 복사합니다.(Copy the extracted data to the `workspace\input` directory)
+```
+python dCairos.py
+```
+`workspace\input` 디렉터리가 없으면 새로 만들거나 dCairos.py를 실행합니다.(If the directory does not exist, create it or run dCairos.py)
