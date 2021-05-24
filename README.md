@@ -40,7 +40,7 @@ pip3 install -r requirements.txt
    ![dCairosQuest](https://user-images.githubusercontent.com/46318494/119313293-57e6b180-bcae-11eb-8199-86c8070e6fc0.jpg)
 4. 아래 표는 기본 디렉토리 구조를 보여줍니다.(The table below shows the main directory structure)
    workspace|script|conf|
+   ---|---|---|
    input|Linux|csv|
    output|MacOS|excel|
-   ---|---|---|
    project|Windows|cli|
