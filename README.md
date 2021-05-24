@@ -6,8 +6,8 @@
 보안 분석 업무 프로세스 자동화 기능 제공 - 추출, 데이터마이닝, 분류, 결과 등
 (Provides security analysis work process automation function - Extraction, data mining, classification, results, etc.)
 
-클라우드 서비스 환경에 따라 예제 변경 및 관리가 가능하여 dCairos 프로젝트의 일부이며 단독으로 사용할 수 있습니다.
-(It is a part of dCairos project as it is possible to change and manage examples according to the cloud service environment, and can be used alone)
+dCairos 프로젝트의 일부로 클라우드 서비스 환경에 따라 예제 변경 및 관리가 가능하여 단독으로 사용할 수 있습니다.
+(It is a part of the dCairos project, and it can be used alone as it is possible to change and manage examples according to the cloud service environment.)
 
 
 ## 설치(Installation)
@@ -18,12 +18,14 @@ pip3 install -r requirements.txt
 ```
 ### 요구 사항(Requirements)
   * Python 3.7+
-  * Windows or Linux or MacOS
+  * Windows or Linux or MacOS:테스트 중(under testing)
 
 ## 사용법(Usage)
 
 ### 명령 줄 인터페이스(Command-Line Interface)
-`test`을 설치하면, 두 가지 간단한 명령 줄(CLI) 프로그램을 얻습니다:
+`script` 디렉터리에는 OS 별 데이터 추출 스크립트가 포함되어 있습니다. 데이터는 명령 줄(CLI) 또는 실행을 통해서 얻습니다.(The directory contains OS-specific data extraction scripts. Data is obtained from the command line (CLI) or through execution.)
 
-* `test` - 데이터가 들어있는 폴더에서, ~ 인식합니다.
-* `test` - 데이터가 들어있는 폴더에서, ~ 찾습니다.
+* `Windows` - '.bat' 실행을 통해서 얻습니다.(It is obtained through execution.)
+* `Linux` - '.sh' 명령 줄(CLI)을 통해서 얻습니다.(Obtained through the command line (CLI).)
+* `MacOS` - '.sh' 현재 지원되지 않습니다.(Currently not supported.)
+* `확실한 결과를 얻으려면 관리자 권한을 실행해야합니다.(You need to run administrator rights to get definite results.)`
