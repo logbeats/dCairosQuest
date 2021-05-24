@@ -41,3 +41,5 @@ pip3 install -r requirements.txt
 4. 아래 표는 디렉토리 구조입니다.(The table below is the directory structure)
    workspace|input|output|project
    ---|---|---|---|
+   script|Linux|MacOS|Windows
+   conf|csv|excel|
