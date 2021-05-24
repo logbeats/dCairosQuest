@@ -28,4 +28,4 @@ pip3 install -r requirements.txt
 * `Windows` - '.bat' 실행을 통해서 얻습니다.(It is obtained through execution.)
 * `Linux` - '.sh' 명령 줄(CLI)을 통해서 얻습니다.(Obtained through the command line (CLI).)
 * `MacOS` - '.sh' 현재 지원되지 않습니다.(Currently not supported.)
-* `확실한 결과를 얻으려면 관리자 권한을 실행해야합니다.(You need to run administrator rights to get definite results.)`
+* `확실한 결과를 얻으려면 관리자 권한으로 실행해야합니다.(You need to run it with administrator privileges to get definite results.)`
