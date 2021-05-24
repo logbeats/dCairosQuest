@@ -39,9 +39,9 @@ pip3 install -r requirements.txt
 3. 실행이 완료되면 데이터 마이닝 / 분석 / 분류 등을 자동으로 수행하여 결과를 얻습니다.(Upon completion of execution, data mining/analysis/classification, etc. are automatically performed to obtain results)
    ![dCairosQuest](https://user-images.githubusercontent.com/46318494/119313293-57e6b180-bcae-11eb-8199-86c8070e6fc0.jpg)
 4. 아래 표는 기본 디렉토리 구조를 보여줍니다.(The table below shows the main directory structure)
-   workspace|script|conf|
+   Datawork|extraction|Classification|
    ----|----|----|
+   workspace|script|conf|
    input|Linux|csv|
    output|MacOS|excel|
-   project|Windows|cli|
    project|Windows|cli|
