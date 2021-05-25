@@ -43,5 +43,5 @@ pip3 install -r requirements.txt
    ----|----|----|
    workspace|script|conf|
    input|Linux|csv|
-   output|MacOS|excel|
+   output|MacOS|xlsx|
    project|Windows|cli|

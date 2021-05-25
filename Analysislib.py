@@ -180,7 +180,7 @@ class DataAnalysis:
 
     def BaseReport(self, targetFile):
         os_type = targetFile[targetFile.rfind('-')+1:]
-        df = pd.read_excel(self.ConfPath+'/excel/'+os_type+'.xlsx',
+        df = pd.read_excel(self.ConfPath+'/xlsx/'+os_type+'.xlsx',
                            header=None)
         return df
 
