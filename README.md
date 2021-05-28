@@ -51,6 +51,7 @@ pip3 install -r requirements.txt
    input|Linux|csv|
    output|MacOS|xlsx|
    project|Windows|cli|
+6. dCairosQuest는 모듈 형태로 사용할 수 있습니다.(dCairosQuest can be used in modular form.)
 
 ## GUI 사용 예(GUI usage example)
 
