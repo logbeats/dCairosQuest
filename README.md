@@ -51,3 +51,7 @@ pip3 install -r requirements.txt
    input|Linux|csv|
    output|MacOS|xlsx|
    project|Windows|cli|
+
+## GUI 사용 예(GUI usage example)
+
+![dCairos](https://user-images.githubusercontent.com/46318494/119974697-f09f6900-bfef-11eb-87b1-19eeb4dfca34.gif)
