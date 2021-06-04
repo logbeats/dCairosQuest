@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 import pandas as pd
 
 
@@ -178,15 +179,47 @@ class DataAnalysis:
     def __init__(self, ConfPath):
         self.ConfPath = ConfPath
 
-    def BaseReport(self, targetFile):
+    def xlsxTOcsv(self, file, Name):
+        iPath = os.path.join(self.ConfPath, 'xlsx', Name, file)
+        if iPath.split('.')[1] == 'xlsx':
+            df = pd.read_excel(iPath, header=None)
+            if Name == 'BaseLine':
+                df = df.loc[:,[0,1,2,3,4]]
+            elif Name == 'BaseReport':
+                df = df.loc[:,[0,1,2,3,4,5,6]]
+            oPath = os.path.join(self.ConfPath, 'csv', Name)
+            cfile = os.path.join(oPath, file.split('.')[0]+'.csv')
+            df.to_csv(cfile, mode='w', index=False)
+
+    def xlsxTOcsvAll(self, path):
+        iPath = os.path.join(self.ConfPath, 'xlsx', path)
+
+        for file in os.listdir(iPath):
+            if file.split('.')[1] == 'xlsx':
+                
+                efile = os.path.join(iPath, file)
+                df = pd.read_excel(efile, header=None)
+                if path == 'BaseLine':
+                    df = df.loc[:,[0,1,2,3,4]]
+                elif path == 'BaseReport':
+                    df = df.loc[:,[0,1,2,3,4,5,6]]
+                oPath = os.path.join(self.ConfPath, 'csv', path)
+                cfile = os.path.join(oPath, file.split('.')[0]+'.csv')
+                df.to_csv(cfile, mode='w', index=False)
+    
+    def BaseLine(self, targetFile):
+        dPath = os.path.join(self.ConfPath, 'csv')
         os_type = targetFile[targetFile.rfind('-')+1:]
-        df = pd.read_excel(self.ConfPath+'/xlsx/'+os_type+'.xlsx',
-                           header=None)
+        lfile = os.path.join(dPath, 'BaseLine', os_type+'.csv')
+        df = pd.read_csv(lfile)
+
         return df
 
-    def BaseLine(self, targetFile):
+    def BaseReport(self, targetFile):
+        dPath = os.path.join(self.ConfPath, 'csv')
         os_type = targetFile[targetFile.rfind('-')+1:]
-        df = pd.read_csv(self.ConfPath+'/csv/'+os_type+'.csv')
+        rfile = os.path.join(dPath, 'BaseReport', os_type+'.csv')
+        df = pd.read_csv(rfile)
 
         return df
 ###############################################################################

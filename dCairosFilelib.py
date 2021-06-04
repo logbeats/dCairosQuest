@@ -342,7 +342,7 @@ class DataToProcess:
             tar.close()
 
             basedir = os.path.abspath(os.path.dirname(__file__))
-            cli = os.path.join(basedir, 'conf', 'cli', 'Linux.cli')
+            cli = os.path.join(basedir, 'conf', 'cli', 'Linux', 'Linux.cli')
             df = self.ResultDATA(zipdir, cli)
             df.to_csv(os.path.join(zipdir, 'ResultData.csv'), mode='w',
                       index=False)

@@ -36,11 +36,11 @@ pip3 install -r requirements.txt
            or
     python3 dCairos.py
    ```
-3. 아래와 같이`-d`의 인수 값을 입력하면 지정된 프로세스가 실행됩니다.(Entering the argument value of `-d` as shown below executes the specified process.)
+3. 데이터 마이닝 / 분류 / 분석은 아래와 같이`-p`의 인자 값을 입력하여 수행됩니다.(Data mining/classification/analysis is executed by entering the argument value of `-p` as shown below)
    ```
-    python dCairos.py -d
+    python dCairos.py -c
            or
-    python3 dCairos.py -d
+    python3 dCairos.py -c
    ```
 4. 실행이 완료되면 데이터 마이닝 / 분석 / 분류 등을 자동으로 수행하여 결과를 얻습니다.(Upon completion of execution, data mining/analysis/classification, etc. are automatically performed to obtain results)
    ![dCairosQuest](https://user-images.githubusercontent.com/46318494/119313293-57e6b180-bcae-11eb-8199-86c8070e6fc0.jpg)
@@ -52,6 +52,11 @@ pip3 install -r requirements.txt
    output|MacOS|xlsx|
    project|Windows|cli|
 6. dCairosQuest는 모듈 형태로 사용할 수 있습니다.(dCairosQuest can be used in modular form.)
+
+## 설정(Setting up)
+1. ing
+2. ing
+3. ing
 
 ## GUI 사용 예(GUI usage example)
 

@@ -120,7 +120,9 @@ class DataWorker:
 
     def ConvertLinux(self, Proto):
         indexCount = list(Proto.index)
+
         for Number in indexCount:
+            
             Convert = str(Proto.iloc[Number, 5])
 
             if Convert != 'None':
