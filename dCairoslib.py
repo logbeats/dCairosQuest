@@ -14,7 +14,7 @@ class dCairos:
         pdDict = {'Name': dAnalysis[0].astype(str).tolist(),
                   'Data': dAnalysis[1].astype(str).tolist(),
                   'Result': dAnalysis[2].astype(str).tolist(),
-                  'ItemCode': dAnalysis[3].astype(str).tolist(), }
+                  'ItemCode': dAnalysis[3].astype(str).tolist()}
         self.df = pd.DataFrame(pdDict)
         self.Proto = Proto
 

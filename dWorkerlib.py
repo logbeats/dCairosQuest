@@ -68,6 +68,7 @@ class DataWorker:
             if Convert != 'None':
                 Convert = Convert.replace('0', '양호')
                 Convert = Convert.replace('1', '취약')
+                Convert = Convert.replace('3', 'N/A')
                 if Number == 4 or Number == 9:
                     Convert = Convert.replace('2', '양호')
                 else:
@@ -114,6 +115,7 @@ class DataWorker:
                 Convert = Convert.replace('0', '양호')
                 Convert = Convert.replace('1', '취약')
                 Convert = Convert.replace('2', '양호')
+                Convert = Convert.replace('3', 'N/A')
                 Proto.iloc[Number, 5] = Convert
             else:
                 pass
