@@ -30,7 +30,7 @@ SecurityUpdate,>=,06.01.2021,최신 HOT-FIX 적용,W-20
 ASSignatureVersion,>=,1.297,ASSignatureVersion,W-21
 SeSecurityPrivilege,==,*S-1-5-32-544,감사 및 보안 로그 관리 여부,W-22
 remoteregistry,!=,Running,원격 사용자가 이 컴퓨터에서 레지스트리 설정을 수정할 수 있도록 설정하는 어플리케이션,W-23
-WinDefender,==,1,WinDefend Service 구동,W-24
+Microsoft Defender Antivirus Service,==,Running,WinDefend Service 구동,W-24
 SamFile,==,0,SAM 파일 접근 통제,W-25
 ScreenSaveActive,!=,0,ScreenSaveActive,W-26
 ScreenSaveTimeout,>=,300,ScreenSaveTimeout,W-26

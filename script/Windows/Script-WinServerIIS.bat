@@ -107,7 +107,7 @@ IF ERRORLEVEL 1 echo AcctypeUsersIP,0 >> ResultData.csv
 IF NOT ERRORLEVEL 1 ECHO AcctypeUsersIP,1 >> ResultData.csv
 del AcctypeUsersIP.txt
 
-cacls c:\inetpub\ftproot >   ftproot.txt
+cacls c:\inetpub\ftproot > ftproot.txt
 type ftproot.txt | find /i "everyone" > nul
 IF ERRORLEVEL 1 echo FtpDirEveryone,0 >> ResultData.csv 
 IF NOT ERRORLEVEL 1 echo FtpDirEveryone,1 >> ResultData.csv
