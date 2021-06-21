@@ -28,18 +28,38 @@ if args.version:
 if args.dSetting:
     div = args.dSetting[0]
     dpach = os.path.join(location['conf'], 'xlsx')
-    if div == 'BaseLine':
+    if div.upper() == 'BL':
         for name in tqdm(os.listdir(os.path.join(dpach, 'BaseLine')), desc='데이터설정[DataSetting]'):
+            print(name)
             DataAnalysis(location['conf']).xlsxTOcsv(name, 'BaseLine')
-    elif div == 'BaseReport':
+    elif div.upper() == 'BR':
         for name in tqdm(os.listdir(os.path.join(dpach, 'BaseReport')), desc='데이터설정[DataSetting]'):
             DataAnalysis(location['conf']).xlsxTOcsv(name, 'BaseReport')
-    elif div == 'All':
+    elif div.upper() == 'BA':
         for name in tqdm(os.listdir(os.path.join(location['conf'], 'xlsx')), desc='데이터설정[DataSetting]'):
             DataAnalysis(location['conf']).xlsxTOcsvAll(name)
     else:
-        pass
-
+        temp = '-' in div
+        if temp:
+            data = div.split('-')
+            if data[0].upper() == 'BL':
+                if data[1] == 'Windows' or data[1] == 'IIS' or data[1] == 'PC' or data[1] == 'Linux':
+                    cName = data[1]+'.xlsx'
+                    for name in tqdm(range(1), desc='데이터설정[DataSetting]'):
+                        DataAnalysis(location['conf']).xlsxTOcsv(cName, 'BaseLine')
+                else:
+                    print('Not Windows OR IIS OR PC OR Linux')
+            elif data[0].upper() == 'BR':
+                if data[1] == 'Windows' or data[1] == 'IIS' or data[1] == 'PC' or data[1] == 'Linux':
+                    cName = data[1]+'.xlsx'
+                    for name in tqdm(range(1), desc='데이터설정[DataSetting]'):
+                        DataAnalysis(location['conf']).xlsxTOcsv(cName, 'BaseReport')
+                else:
+                    print('Not Windows OR IIS OR PC OR Linux')
+            else:
+                print('bl OR br and [ClassificationName] ex) bl-PC OR br-PC')
+        else:
+            print('bl OR br OR ba OR bf-[ClassificationName] ex) bf-PC')
 ###############################################################################
 if args.dProcess:
     for name in tqdm(os.listdir(location['input']), desc='데이터마이닝[DataMining]'):
