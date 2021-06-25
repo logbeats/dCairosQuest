@@ -12,7 +12,6 @@ from tqdm import tqdm
 parser = argparse.ArgumentParser(description='dCairosQuest argument')
 parser.add_argument("-v", "--version", dest="version", action="store_true")
 parser.add_argument("-s", "--dSetting", dest="dSetting", action="append")
-parser.add_argument("-f", "--dfile", dest="dfile", action="store")
 parser.add_argument("-p", "--dProcess", dest="dProcess", action="store_true")
 # __init__#####################################################################
 basedir = os.path.abspath(os.path.dirname(__file__))
